@@ -8,7 +8,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     // Check for KTP ending with 9999
     const ktp = formData.get('ktp');
     if (ktp.endsWith('9999')) {
-        showPopup();
+        showPopup('popup-error');
         return;
     }
 
@@ -23,13 +23,13 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     console.log('Form Submitted', Object.fromEntries(formData));
 
     // Display success message or redirect to another page
-    alert('Registration successful!');
+    showPopup('popup-success');
     event.target.reset(); // Reset the form
 });
 
-function showPopup() {
-    const popup = document.getElementById('popup');
-    const span = document.getElementsByClassName('close')[0];
+function showPopup(popupId) {
+    const popup = document.getElementById(popupId);
+    const span = popup.getElementsByClassName('close')[0];
 
     popup.style.display = 'block';
 

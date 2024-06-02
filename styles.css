@@ -74,6 +74,10 @@ button:hover {
     border-radius: 10px;
 }
 
+.popup-content.success {
+    background-color: green;
+}
+
 .close {
     color: white;
     float: right;

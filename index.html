@@ -47,13 +47,22 @@
             <button type="submit">Register</button>
         </form>
     </div>
-    <div id="popup" class="popup">
+    <div id="popup-error" class="popup">
         <div class="popup-content">
             <span class="close">&times;</span>
             <div class="alert-icon">
                 <img src="alert-svgrepo-com.svg" alt="Alert Icon" />
             </div>
-            <p>Your ID is detected as an online gambler admin, so you can't complete the registration.</p>
+            <p>Your ID is detected as an online gambler, so you can't complete the registration.</p>
+        </div>
+    </div>
+    <div id="popup-success" class="popup">
+        <div class="popup-content success">
+            <span class="close">&times;</span>
+            <div class="alert-icon">
+                <img src="success-svgrepo-com.svg" alt="Success Icon" />
+            </div>
+            <p>Your registration was successful!</p>
         </div>
     </div>
     <script src="script.js"></script>
