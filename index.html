@@ -10,6 +10,9 @@
     <div class="registration-container">
         <h2>Bank Registration</h2>
         <form id="registrationForm">
+            <label for="ktp">ID Number (KTP)</label>
+            <input type="text" id="ktp" name="ktp" required>
+
             <label for="fullName">Full Name</label>
             <input type="text" id="fullName" name="fullName" required>
 
@@ -43,6 +46,12 @@
 
             <button type="submit">Register</button>
         </form>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>Your ID is detected as an online gambler, so you can't complete the registration.</p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
