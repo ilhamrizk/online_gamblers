@@ -63,17 +63,19 @@ button:hover {
 }
 
 .popup-content {
-    background-color: #fefefe;
+    background-color: red;
+    color: white;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     text-align: center;
     position: relative;
+    border-radius: 10px;
 }
 
 .close {
-    color: #aaa;
+    color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
